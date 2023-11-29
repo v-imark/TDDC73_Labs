@@ -58,7 +58,7 @@ class MainActivity : ComponentActivity() {
                                 .padding(innerPadding)
                                 .fillMaxWidth()
                                 .fillMaxHeight(),
-                            verticalArrangement = Arrangement.SpaceEvenly,
+                            verticalArrangement = Arrangement.spacedBy(40.dp),
                             horizontalAlignment = Alignment.CenterHorizontally,
 
                             ) {
@@ -92,21 +92,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Lab1_kotlin_composeTheme {
-        Greeting("Android")
-    }
-}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

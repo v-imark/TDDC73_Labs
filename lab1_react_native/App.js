@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image, Button, TextInput } from 'react-native';
 
 export default function App() {
   return (
+  //make top aligned
     <View style={styles.container}>
        <View style={styles.header}>
             <Text style={{fontSize: 24}}>Header</Text>
@@ -37,10 +38,11 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
+    gap: 30,
     backgroundColor: '#fff',
   },
   header: {
-    flex: 1,
+
     backgroundColor: 'cyan',
     display: 'flex',
     flexDirection: 'row',
@@ -53,22 +55,24 @@ const styles = StyleSheet.create({
     height: 240,
   },
   imageContainer: {
-    flex: 3,
+
     alignItems: 'center',
         justifyContent: 'center',
   },
   buttonsOuterContainer : {
-    flex: 3,
+    display:'flex',
+    flexDirection: 'column',
+    gap: 30,
   },
   buttonsContainer: {
-    flex: 1,
+
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-evenly',
   },
   textInputContainer: {
-    flex: 1,
+
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
